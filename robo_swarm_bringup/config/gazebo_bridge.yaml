@@ -4,6 +4,12 @@
   gz_type_name: "gz.msgs.Clock"
   direction: GZ_TO_ROS
 
+- ros_topic_name: "/joint_states"
+  gz_topic_name: "/model/my_robot/joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: GZ_TO_ROS
+  
 - ros_topic_name: "/tf"
   gz_topic_name: "/model/my_robot/tf"
   ros_type_name: "tf2_msgs/msg/TFMessage"
@@ -20,4 +26,10 @@
   gz_topic_name: "/model/my_robot/odometry"
   ros_type_name: "nav_msgs/msg/Odometry"
   gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/scan"
+  gz_topic_name: "/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
   direction: GZ_TO_ROS

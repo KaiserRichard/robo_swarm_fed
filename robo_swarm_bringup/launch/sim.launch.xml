@@ -22,4 +22,6 @@
     </node>
     
     <node pkg="rviz2" exec="rviz2" output="screen" />
+
+    <node pkg="robo_swarm_controller" exec="obstacle_avoidance" output="screen" />
 </launch>
