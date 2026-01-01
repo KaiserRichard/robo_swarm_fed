@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'patrol_node = robo_swarm_controller.patrol_node:main',
+            'obstacle_avoidance_node = robo_swarm_controller.obstacle_avoidance_node:main',
         ],
     },
 )
