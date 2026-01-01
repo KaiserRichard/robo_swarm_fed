@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'patrol_node = robo_swarm_controller.patrol_node:main',
         ],
     },
 )
