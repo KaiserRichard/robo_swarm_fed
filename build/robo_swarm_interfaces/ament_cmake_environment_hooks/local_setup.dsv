@@ -1,0 +1,2 @@
+source;share/robo_swarm_interfaces/environment/ament_prefix_path.sh
+source;share/robo_swarm_interfaces/environment/path.sh

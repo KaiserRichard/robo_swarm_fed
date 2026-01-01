@@ -1,0 +1,3 @@
+[console_scripts]
+obstacle_avoidance = robo_swarm_controller.obstacle_avoidance:main
+patrol_node = robo_swarm_controller.patrol_node:main

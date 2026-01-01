@@ -1,0 +1,1 @@
+/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/ament_cmake_environment_hooks/local_setup.bash

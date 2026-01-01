@@ -1,0 +1,323 @@
+[0.229s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.230s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=7, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77119c6484d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77119c5e9f10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77119c5e9f10>>, mixin_verb=('build',))
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.297s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/richard/ros2_ws/src/robo_swarm_fed'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_bringup) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_swarm_bringup' with type 'ros.ament_cmake' and name 'robo_swarm_bringup'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_controller) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_swarm_controller' with type 'ros.ament_python' and name 'robo_swarm_controller'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_description) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_swarm_description' with type 'ros.ament_cmake' and name 'robo_swarm_description'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(robo_swarm_interfaces) by extension 'ros'
+[0.354s] DEBUG:colcon.colcon_core.package_identification:Package 'robo_swarm_interfaces' with type 'ros.ament_cmake' and name 'robo_swarm_interfaces'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.398s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/richard/ros2_ws/install
+[0.402s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 438 installed packages in /opt/ros/jazzy
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_args' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_target' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.538s] DEBUG:colcon.colcon_core.verb:Building package 'robo_swarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup', 'merge_install': False, 'path': '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_args' from command line to 'None'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_target' from command line to 'None'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.541s] DEBUG:colcon.colcon_core.verb:Building package 'robo_swarm_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller', 'merge_install': False, 'path': '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_controller', 'symlink_install': True, 'test_result_base': None}
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_target' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.544s] DEBUG:colcon.colcon_core.verb:Building package 'robo_swarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description', 'merge_install': False, 'path': '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_description', 'symlink_install': True, 'test_result_base': None}
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'robo_swarm_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.546s] DEBUG:colcon.colcon_core.verb:Building package 'robo_swarm_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces', 'merge_install': False, 'path': '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.547s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.553s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_bringup' with build type 'ament_cmake'
+[0.555s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_bringup'
+[0.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.560s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.560s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.566s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_controller' with build type 'ament_python'
+[0.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_controller', 'ament_prefix_path')
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/ament_prefix_path.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/ament_prefix_path.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/ament_prefix_path.sh'
+[0.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.578s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_description' with build type 'ament_cmake'
+[0.579s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_description'
+[0.580s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.580s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.588s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces' with build type 'ament_cmake'
+[0.590s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces'
+[0.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup
+[1.153s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_controller'
+[1.153s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.153s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description
+[1.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces
+[2.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup
+[2.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup -- -j7 -l7
+[2.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup -- -j7 -l7
+[2.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup
+[2.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description
+[2.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description -- -j7 -l7
+[2.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/build --no-deps symlink_data
+[3.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description -- -j7 -l7
+[3.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description
+[3.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces
+[3.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces -- -j7 -l7
+[3.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces -- -j7 -l7
+[3.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces
+[3.178s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_bringup)
+[3.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup
+[3.195s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup' for CMake module files
+[3.196s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup' for CMake config files
+[3.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_bringup', 'cmake_prefix_path')
+[3.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.ps1'
+[3.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.dsv'
+[3.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.sh'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/bin'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/lib/pkgconfig/robo_swarm_bringup.pc'
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/lib/python3.12/site-packages'
+[3.214s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/bin'
+[3.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.ps1'
+[3.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.dsv'
+[3.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.sh'
+[3.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.bash'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.zsh'
+[3.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/colcon-core/packages/robo_swarm_bringup)
+[3.226s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_bringup)
+[3.227s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup' for CMake module files
+[3.228s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup' for CMake config files
+[3.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_bringup', 'cmake_prefix_path')
+[3.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.ps1'
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.dsv'
+[3.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/hook/cmake_prefix_path.sh'
+[3.233s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/bin'
+[3.234s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/lib/pkgconfig/robo_swarm_bringup.pc'
+[3.234s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/lib/python3.12/site-packages'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/bin'
+[3.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.ps1'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.dsv'
+[3.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.sh'
+[3.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.bash'
+[3.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.zsh'
+[3.252s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/colcon-core/packages/robo_swarm_bringup)
+[3.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_description)
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description' for CMake module files
+[3.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_description
+[3.441s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description' for CMake config files
+[3.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_description', 'cmake_prefix_path')
+[3.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.ps1'
+[3.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.dsv'
+[3.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.sh'
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/bin'
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/lib/pkgconfig/robo_swarm_description.pc'
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/lib/python3.12/site-packages'
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/bin'
+[3.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.ps1'
+[3.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.dsv'
+[3.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.sh'
+[3.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.bash'
+[3.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.zsh'
+[3.453s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/colcon-core/packages/robo_swarm_description)
+[3.454s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_description)
+[3.455s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description' for CMake module files
+[3.455s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description' for CMake config files
+[3.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_description', 'cmake_prefix_path')
+[3.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.ps1'
+[3.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.dsv'
+[3.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/hook/cmake_prefix_path.sh'
+[3.460s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/bin'
+[3.460s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/lib/pkgconfig/robo_swarm_description.pc'
+[3.461s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/lib/python3.12/site-packages'
+[3.461s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/bin'
+[3.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.ps1'
+[3.463s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.dsv'
+[3.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.sh'
+[3.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.bash'
+[3.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/robo_swarm_description/package.zsh'
+[3.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_description/share/colcon-core/packages/robo_swarm_description)
+[3.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_interfaces)
+[3.475s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces' for CMake module files
+[3.476s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces' for CMake config files
+[3.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces
+[3.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_interfaces', 'cmake_prefix_path')
+[3.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.ps1'
+[3.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.dsv'
+[3.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.sh'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/bin'
+[3.485s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/lib/pkgconfig/robo_swarm_interfaces.pc'
+[3.486s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/lib/python3.12/site-packages'
+[3.487s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/bin'
+[3.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.ps1'
+[3.490s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.dsv'
+[3.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.sh'
+[3.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.bash'
+[3.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.zsh'
+[3.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/colcon-core/packages/robo_swarm_interfaces)
+[3.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_interfaces)
+[3.497s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces' for CMake module files
+[3.498s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces' for CMake config files
+[3.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_interfaces', 'cmake_prefix_path')
+[3.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.ps1'
+[3.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.dsv'
+[3.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/hook/cmake_prefix_path.sh'
+[3.504s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/bin'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/lib/pkgconfig/robo_swarm_interfaces.pc'
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/lib/python3.12/site-packages'
+[3.506s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/bin'
+[3.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.ps1'
+[3.507s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.dsv'
+[3.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.sh'
+[3.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.bash'
+[3.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.zsh'
+[3.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/colcon-core/packages/robo_swarm_interfaces)
+[4.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_controller', 'pythonpath_develop')
+[4.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath_develop.ps1'
+[4.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/build --no-deps symlink_data
+[4.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath_develop.dsv'
+[4.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath_develop.sh'
+[4.284s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller' for CMake module files
+[4.285s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller' for CMake config files
+[4.285s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib'
+[4.287s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/bin'
+[4.287s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/pkgconfig/robo_swarm_controller.pc'
+[4.287s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/python3.12/site-packages'
+[4.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo_swarm_controller', 'pythonpath')
+[4.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath.ps1'
+[4.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath.dsv'
+[4.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/hook/pythonpath.sh'
+[4.292s] Level 1:colcon.colcon_core.environment:checking '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/bin'
+[4.292s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo_swarm_controller)
+[4.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/package.ps1'
+[4.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/package.dsv'
+[4.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/package.sh'
+[4.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/package.bash'
+[4.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller/package.zsh'
+[4.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/colcon-core/packages/robo_swarm_controller)
+[4.300s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.301s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.305s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.326s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.327s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.327s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.352s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.354s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/richard/ros2_ws/src/robo_swarm_fed/install/local_setup.ps1'
+[4.356s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/richard/ros2_ws/src/robo_swarm_fed/install/_local_setup_util_ps1.py'
+[4.358s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/richard/ros2_ws/src/robo_swarm_fed/install/setup.ps1'
+[4.360s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/richard/ros2_ws/src/robo_swarm_fed/install/local_setup.sh'
+[4.361s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/richard/ros2_ws/src/robo_swarm_fed/install/_local_setup_util_sh.py'
+[4.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/richard/ros2_ws/src/robo_swarm_fed/install/setup.sh'
+[4.365s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/richard/ros2_ws/src/robo_swarm_fed/install/local_setup.bash'
+[4.366s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/richard/ros2_ws/src/robo_swarm_fed/install/setup.bash'
+[4.369s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/richard/ros2_ws/src/robo_swarm_fed/install/local_setup.zsh'
+[4.370s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/richard/ros2_ws/src/robo_swarm_fed/install/setup.zsh'

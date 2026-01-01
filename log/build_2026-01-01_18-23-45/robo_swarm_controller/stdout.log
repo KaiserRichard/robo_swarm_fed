@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating robo_swarm_controller.egg-info
+writing robo_swarm_controller.egg-info/PKG-INFO
+writing dependency_links to robo_swarm_controller.egg-info/dependency_links.txt
+writing entry points to robo_swarm_controller.egg-info/entry_points.txt
+writing requirements to robo_swarm_controller.egg-info/requires.txt
+writing top-level names to robo_swarm_controller.egg-info/top_level.txt
+writing manifest file 'robo_swarm_controller.egg-info/SOURCES.txt'
+reading manifest file 'robo_swarm_controller.egg-info/SOURCES.txt'
+writing manifest file 'robo_swarm_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/python3.12/site-packages/robo-swarm-controller.egg-link (link to .)
+Installing obstacle_avoidance script to /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/robo_swarm_controller
+Installing patrol_node script to /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/lib/robo_swarm_controller
+
+Installed /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller
+running symlink_data
+creating /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/ament_index
+creating /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/ament_index/resource_index
+creating /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/ament_index/resource_index/packages
+symbolically linking /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/resource/robo_swarm_controller -> /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/ament_index/resource_index/packages
+symbolically linking /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_controller/package.xml -> /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_controller/share/robo_swarm_controller

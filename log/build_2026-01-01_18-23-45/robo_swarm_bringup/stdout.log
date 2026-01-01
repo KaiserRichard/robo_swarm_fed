@@ -1,0 +1,42 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/launch/sim.launch.xml
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/config/gazebo_bridge.yaml
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/config/my_robot_controllers.yaml
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/worlds/test_world.sdf
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/ament_index/resource_index/package_run_dependencies/robo_swarm_bringup
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/ament_index/resource_index/parent_prefix_path/robo_swarm_bringup
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/environment/path.sh
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/environment/path.dsv
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/local_setup.bash
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/local_setup.sh
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/local_setup.zsh
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/local_setup.dsv
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.dsv
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/ament_index/resource_index/packages/robo_swarm_bringup
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/cmake/robo_swarm_bringupConfig.cmake
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/cmake/robo_swarm_bringupConfig-version.cmake
+-- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_bringup/share/robo_swarm_bringup/package.xml

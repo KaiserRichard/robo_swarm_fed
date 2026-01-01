@@ -1,0 +1,44 @@
+[0.610s] Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces
+[0.699s] -- The C compiler identification is GNU 13.3.0
+[0.793s] -- The CXX compiler identification is GNU 13.3.0
+[0.822s] -- Detecting C compiler ABI info
+[0.987s] -- Detecting C compiler ABI info - done
+[1.003s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.004s] -- Detecting C compile features
+[1.005s] -- Detecting C compile features - done
+[1.019s] -- Detecting CXX compiler ABI info
+[1.195s] -- Detecting CXX compiler ABI info - done
+[1.212s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.214s] -- Detecting CXX compile features
+[1.215s] -- Detecting CXX compile features - done
+[1.223s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.639s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.041s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.158s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.433s] -- Added test 'lint_cmake' to check CMake code style
+[2.435s] -- Added test 'xmllint' to check XML markup files
+[2.438s] -- Configuring done (1.8s)
+[2.449s] -- Generating done (0.0s)
+[2.454s] -- Build files have been written to: /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces
+[2.466s] Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/richard/ros2_ws/src/robo_swarm_fed/robo_swarm_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces
+[2.472s] Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces -- -j7 -l7
+[2.579s] Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces -- -j7 -l7
+[2.580s] Invoking command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces
+[2.621s] -- Install configuration: ""
+[2.622s] -- Execute custom install script
+[2.622s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/ament_index/resource_index/package_run_dependencies/robo_swarm_interfaces
+[2.636s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/ament_index/resource_index/parent_prefix_path/robo_swarm_interfaces
+[2.667s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/environment/ament_prefix_path.sh
+[2.680s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/environment/ament_prefix_path.dsv
+[2.696s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/environment/path.sh
+[2.715s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/environment/path.dsv
+[2.731s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/local_setup.bash
+[2.749s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/local_setup.sh
+[2.764s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/local_setup.zsh
+[2.778s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/local_setup.dsv
+[2.794s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.dsv
+[2.812s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/ament_index/resource_index/packages/robo_swarm_interfaces
+[2.829s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/cmake/robo_swarm_interfacesConfig.cmake
+[2.847s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/cmake/robo_swarm_interfacesConfig-version.cmake
+[2.860s] -- Symlinking: /home/richard/ros2_ws/src/robo_swarm_fed/install/robo_swarm_interfaces/share/robo_swarm_interfaces/package.xml
+[2.889s] Invoked command in '/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/richard/ros2_ws/install/robo_swarm_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces
