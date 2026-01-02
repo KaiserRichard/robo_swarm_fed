@@ -1,68 +1,125 @@
+"""
+@file data_collector.py
+@description
+Data recording node for Phase 1.
+
+This node records:
+- LiDAR scans (input)
+- Velocity commands (output)
+
+It produces the dataset used in Phase 2 AI training.
+"""
+
 import rclpy
 from rclpy.node import Node
-from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
-import message_filters
-import pandas as pd
+from geometry_msgs.msg import Twist
+import csv
 import os
 
-class DataCollector(Node):
+
+class DataCollectorNode(Node):
+    """
+    Records (LiDAR → cmd_vel) pairs to CSV.
+
+    Design:
+    - LiDAR is stored as the latest observation
+    - Each velocity command triggers one data record
+    """
+
     def __init__(self):
-        super().__init__('data_collector_node')
+        super().__init__("data_collector_node")
 
-        # 1. Define the Better Path
-        # We find the user's home, then build the path to ai_brain/data/
-        home = os.path.expanduser('~')
-        self.csv_path = os.path.join(home, 'ros2_ws/src/robo_swarm_fed/ai_brain/data/robot_data.csv')
-        
-        self.get_logger().info(f"📁 Data Collector Ready. Saving to: {self.csv_path}")
-
-        # 2. Set up Subscribers (Same as before)
-        self.odom_sub = message_filters.Subscriber(self, Odometry, '/odom')
-        self.scan_sub = message_filters.Subscriber(self, LaserScan, '/scan')
-        self.ts = message_filters.ApproximateTimeSynchronizer(
-            [self.odom_sub, self.scan_sub], 10, 0.1
+        # Subscribers
+        self.scan_sub = self.create_subscription(
+            LaserScan,
+            "/scan",
+            self.scan_callback,
+            10
         )
-        self.ts.registerCallback(self.listener_callback)
-        self.data_buffer = []
 
-    def listener_callback(self, odom_msg, scan_msg):
-        linear_x = odom_msg.twist.twist.linear.x
-        angular_z = odom_msg.twist.twist.angular.z
-        
-        # Save limited Lidar ranges (only 360 points)
-        lidar_ranges = list(scan_msg.ranges[:360])
-        
-        row = [linear_x, angular_z] + lidar_ranges
-        self.data_buffer.append(row)
+        self.cmd_sub = self.create_subscription(
+            Twist,
+            "/cmd_vel",
+            self.cmd_callback,
+            10
+        )
 
-        # Save every 50 steps
-        if len(self.data_buffer) >= 50:
-            self.save_to_csv()
+        # Store latest LiDAR scan
+        self.latest_scan = None
 
-    def save_to_csv(self):
-        columns = ['linear_x', 'angular_z'] + [f'lidar_{i}' for i in range(360)]
-        df = pd.DataFrame(self.data_buffer, columns=columns)
+        # Output CSV file
+        self.csv_path = os.path.expanduser(
+            "~/robot_data.csv"
+        )
 
-        # Append if file exists, write new if not
-        if not os.path.isfile(self.csv_path):
-            df.to_csv(self.csv_path, index=False)
-        else:
-            df.to_csv(self.csv_path, mode='a', header=False, index=False)
+        # Initialize CSV file
+        self._init_csv()
 
-        self.get_logger().info(f"💾 Saved {len(self.data_buffer)} points to ai_brain/data/")
-        self.data_buffer = []
+        self.get_logger().info(
+            f"Data collector started. Saving to {self.csv_path}"
+        )
+
+    def _init_csv(self):
+        """
+        Create CSV file with header if it does not exist.
+        """
+        if not os.path.exists(self.csv_path):
+            with open(self.csv_path, "w", newline="") as f:
+                writer = csv.writer(f)
+
+                # Header:
+                # [linear_x, angular_z, r_0, r_1, ..., r_359]
+                header = (
+                    ["linear_x", "angular_z"]
+                    + [f"r_{i}" for i in range(360)]
+                )
+                writer.writerow(header)
+
+    def scan_callback(self, scan: LaserScan):
+        """
+        Store the most recent LiDAR scan.
+        """
+        self.latest_scan = scan.ranges
+
+    def cmd_callback(self, cmd: Twist):
+        """
+        Record a data sample whenever a velocity command is issued.
+        """
+        if self.latest_scan is None:
+            return
+
+        # Ensure fixed LiDAR size
+        ranges = list(self.latest_scan)[:360]
+        if len(ranges) < 360:
+            ranges += [0.0] * (360 - len(ranges))
+
+        row = [
+            cmd.linear.x,
+            cmd.angular.z,
+            *ranges
+        ]
+
+        with open(self.csv_path, "a", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(row)
+
 
 def main(args=None):
+    """
+    ROS 2 entry point.
+    """
     rclpy.init(args=args)
-    node = DataCollector()
+    node = DataCollectorNode()
+
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.save_to_csv()
+        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
