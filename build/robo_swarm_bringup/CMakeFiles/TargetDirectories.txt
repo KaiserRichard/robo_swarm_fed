@@ -1,9 +1,0 @@
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/uninstall.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/robo_swarm_bringup_uninstall.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/test.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/edit_cache.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/rebuild_cache.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/list_install_components.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/install.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/install/local.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_bringup/CMakeFiles/install/strip.dir

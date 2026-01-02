@@ -1,9 +1,0 @@
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/uninstall.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/robo_swarm_interfaces_uninstall.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/test.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/edit_cache.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/rebuild_cache.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/list_install_components.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/install.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/install/local.dir
-/home/richard/ros2_ws/src/robo_swarm_fed/build/robo_swarm_interfaces/CMakeFiles/install/strip.dir
