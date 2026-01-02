@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'patrol_node = robo_swarm_controller.patrol_node:main',
             'obstacle_avoidance = robo_swarm_controller.obstacle_avoidance:main',
+            'data_collector = robo_swarm_controller.data_collector:main',
         ],
     },
 )
