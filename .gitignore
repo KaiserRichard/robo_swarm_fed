@@ -1,3 +1,22 @@
+# ROS 2 Build Artifacts
+build/
+install/
+log/
+
+# Python Virtual Env
+.venv/
+venv/
+env/
+
+# Python compiled files
 __pycache__/
 *.py[cod]
-*.class
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Large Data Files (Keep structure, ignore content)
+ai_brain/data/*.pt
+ai_brain/data/*.pth
+ai_brain/data/*.csv
