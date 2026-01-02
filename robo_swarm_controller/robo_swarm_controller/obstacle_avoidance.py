@@ -1,55 +1,101 @@
-#!/usr/bin/env python3
+"""
+@file obstacle_avoidance.py
+@description
+Reactive obstacle avoidance controller for Phase 1.
+
+This node uses LiDAR data to:
+- Stop when an obstacle is too close
+- Turn away to avoid collision
+
+Acts as a SAFETY BASELINE and TEACHER
+for later imitation learning.
+"""
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
+
 class ObstacleAvoidanceNode(Node):
+    """
+    Simple reactive controller using LiDAR.
+
+    Logic:
+    - If closest obstacle < threshold → stop & turn
+    - Else → move forward
+    """
+
     def __init__(self):
-        super().__init__('obstacle_avoidance_node')
-        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.subscription = self.create_subscription(
-            LaserScan, '/scan', self.scan_callback, 10)
-        self.get_logger().info("⚠️ Safety Node Started (TDD Mode)")
+        super().__init__("obstacle_avoidance_node")
 
-    def scan_callback(self, msg):
-        # 1. Get the logical command
-        twist = self.calculate_command(msg)
-        # 2. Publish it
-        self.publisher_.publish(twist)
+        # Publisher for robot velocity
+        self.cmd_pub = self.create_publisher(
+            Twist,
+            "/cmd_vel",
+            10
+        )
 
-    def calculate_command(self, scan_msg):
+        # Subscriber for LiDAR data
+        self.scan_sub = self.create_subscription(
+            LaserScan,
+            "/scan",
+            self.scan_callback,
+            10
+        )
+
+        # Safety threshold (meters)
+        self.stop_distance = 0.5
+
+        self.get_logger().info(
+            "Obstacle avoidance node started (Phase 1 safety controller)."
+        )
+
+    def scan_callback(self, scan: LaserScan):
         """
-        PURE LOGIC: Takes data, returns decision.
-        No ROS publishing happens here.
+        Process incoming LiDAR scan and publish velocity command.
         """
-        twist = Twist()
 
-        # Filter out "infinity" or 0.0 errors
-        valid_ranges = [r for r in scan_msg.ranges if r > 0.0]
-        if not valid_ranges:
-            return twist # No data, do nothing
+        # Filter invalid readings
+        valid_ranges = [
+            r for r in scan.ranges
+            if r > 0.0
+        ]
 
-        min_distance = min(valid_ranges)
+        # Default: no obstacle detected
+        min_distance = min(valid_ranges) if valid_ranges else float("inf")
 
-        if min_distance < 0.5:
-            # REFLEX: STOP AND TURN
-            twist.linear.x = 0.0
-            twist.angular.z = 0.5
+        cmd = Twist()
+
+        if min_distance < self.stop_distance:
+            # Obstacle too close → stop and turn
+            cmd.linear.x = 0.0
+            cmd.angular.z = 0.5
         else:
-            # CRUISE MODE
-            twist.linear.x = 0.2
-            twist.angular.z = 0.0
+            # Path is clear → move forward
+            cmd.linear.x = 0.2
+            cmd.angular.z = 0.0
 
-        return twist
+        self.cmd_pub.publish(cmd)
+
 
 def main(args=None):
+    """
+    ROS 2 entry point.
+    """
     rclpy.init(args=args)
     node = ObstacleAvoidanceNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
 
-if __name__ == '__main__':
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        # Stop robot safely
+        node.cmd_pub.publish(Twist())
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == "__main__":
     main()
-
