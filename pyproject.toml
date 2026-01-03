@@ -1,0 +1,90 @@
+# ------------------------------------------------------------
+# Build system (standard, minimal)
+# ------------------------------------------------------------
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+# ------------------------------------------------------------
+# Project metadata
+# ------------------------------------------------------------
+[project]
+name = "robo-swarm-fed"
+version = "0.1.0"
+description = "Energy-aware federated learning for robot navigation (Phase 3)"
+license = "Apache-2.0"
+
+dependencies = [
+    # Federated Learning (Next-Gen API)
+    "flwr[simulation]>=1.23.0",
+
+    # Core ML
+    "torch>=2.0.0",
+
+    # Optional experiment tracking (Phase 6+)
+    "wandb>=0.17.8",
+]
+
+
+# ------------------------------------------------------------
+# Packaging (simple, flat)
+# ------------------------------------------------------------
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+
+# ------------------------------------------------------------
+# Flower App registration
+# ------------------------------------------------------------
+[tool.flwr.app]
+publisher = "Kaiser Richard"
+
+
+# ------------------------------------------------------------
+# Flower components
+# These paths MUST match your code structure exactly
+# ------------------------------------------------------------
+[tool.flwr.app.components]
+serverapp = "ai_brain.federated.server_app:app"
+clientapp = "ai_brain.federated.client_app:app"
+
+
+# ------------------------------------------------------------
+# Experiment configuration
+# Injected via Context.run_config
+# ------------------------------------------------------------
+[tool.flwr.app.config]
+
+# Federated control
+num-server-rounds = 20
+fraction-train = 0.5
+fraction-evaluate = 1.0
+
+# Local training (client-side)
+local-epochs = 5
+lr = 0.01
+batch-size = 32
+
+
+# ------------------------------------------------------------
+# Federation backends
+# ------------------------------------------------------------
+[tool.flwr.federations]
+default = "local-simulation"
+
+
+# ------------------------------------------------------------
+# Local simulation (Phase 3–6)
+# ------------------------------------------------------------
+[tool.flwr.federations.local-simulation]
+backend = "local"
+options.num-supernodes = 3
+
+
+# ------------------------------------------------------------
+# Remote federation (future use, Phase 6+)
+# ------------------------------------------------------------
+[tool.flwr.federations.remote-federation]
+address = "<SUPERLINK-ADDRESS>:<PORT>"
+insecure = true
